@@ -1,19 +1,23 @@
 import React, { useState } from "react";
 import Typography from "@mui/material/Typography";
-// import {
-//     createTheme,
-//     responsiveFontSizes,
-//     ThemeProvider,
-//   } from '@mui/material/styles';
-
+import "../index.css";
+// import Box from "@mui/material/Box";
+// import Paper from "@mui/material/Paper";
+import {
+  createTheme,
+  responsiveFontSizes,
+  ThemeProvider,
+  makeStyles,
+} from "@mui/material/styles";
 import Button from "@mui/material/Button";
 
+// const useSyles = makeStyles({});
 function Home() {
   const [btnColor, setBtnColor] = useState("error");
-
+  // const classes = useSyles();
   return (
     <div align="center">
-      <div align="center" style={{width: "70%", border: "2px solid black"}}>
+      <div className="divContent">
         <Typography variant="h3">This is title</Typography>
         <Typography variant="body1">
           It is a long established fact that a reader will be distracted by the
@@ -32,8 +36,9 @@ function Home() {
           variant="contained"
           size="medium"
         >
-          Сменить цвет
+          GO
         </Button>
+       
       </div>
     </div>
   );
